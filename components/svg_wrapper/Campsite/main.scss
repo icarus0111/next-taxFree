@@ -1,0 +1,109 @@
+.camp-site-corner{
+  overflow: hidden;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  div>div{
+    display: flex
+  }
+    .tag{
+		opacity:0;
+	}
+  svg{
+    height: 310px;
+  }
+	.smoke-wrapper{
+		opacity:0;
+		animation: smoke 3s infinite ease-out;
+		animation-fill-mode: forwards;
+	}
+	.smoke{
+		animation: puff 3s infinite linear;
+		transform-origin: 50% 100%;
+		transform-box: fill-box;
+	}
+
+	.flame{
+		animation: flame .6s infinite linear;
+		transform-origin: 50% 100%;
+		transform-box: fill-box;
+	}
+
+	@keyframes smoke{
+		0%{
+			transform: translate(0%, 0%);
+			opacity: 0;
+		}
+		20%{
+			opacity: 1;
+		}
+		100%{
+			transform: translate(0%, -10%);
+			opacity: 0;
+		}
+	}
+
+	@keyframes puff{
+		0%{
+			transform: scale(1)
+		}
+		100%{
+			transform: scale(5)
+		}
+	}
+
+
+
+
+	@keyframes flame{
+		0%{
+			transform: scale(.1);
+			opacity:1;
+		}
+		50%{
+			opacity:1;
+		}
+		100%{
+			transform: scale(1);
+			opacity:0;
+		}
+	}
+
+
+
+
+	/* second delay */
+	.s-0{
+		animation-delay: 0s;
+	}
+
+	.s-1{
+		animation-delay: 1s;
+	}
+
+	.s-2{
+		animation-delay: 2s;
+	}
+
+	.s-3{
+		animation-delay: 3s;
+	}
+
+	/* tens of second delay */
+	.ts-0{
+		animation-delay: 0s;
+	}
+
+	.ts-1{
+		animation-delay: .1s;
+	}
+
+	.ts-2{
+		animation-delay: .2s;
+	}
+
+	.ts-3{
+		animation-delay: .3s;
+	}
+
+}

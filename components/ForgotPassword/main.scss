@@ -1,0 +1,91 @@
+.forgot-password{
+
+  &-section{
+    background: #fff;
+    border-radius: 10px;
+    margin: 0px auto;
+    width: 90%;
+    max-width: 480px;
+    min-width: 300px;
+  }
+
+  &-title{
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+    font-size: 20px;
+    background: #43C59E;
+    color:#fff;
+  }
+
+  &-form{
+    padding: 10px;
+    height: 270px;
+    position: relative;
+  }
+
+  &-input-container{
+    margin: 25px 0px;
+  }
+
+  &-input-title{
+    color: #43C59E;
+  }
+  &-input-field{
+    border: none;
+    border-bottom: 2px solid #dfdfdf;
+    cursor: pointer;
+    margin: 10px 0px;
+    padding: 0px 0px 5px 5px;
+    width: 90%;
+    &:focus{
+      border-bottom: 2px solid #43C59E;
+    }
+  }
+  &-submit-btn{
+    background: #43C59E;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 15px;
+    margin-top: 25px;
+    font-size: 18px;
+    width: 150px;
+  }
+  &-error-message-container{
+    position: absolute;
+    z-index: 10;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FF3A3A;
+    color:#fff;
+    border-radius: 0px 0px 8px 8px;
+    cursor: pointer;
+  }
+  &-error-message-content{
+    text-align: center;
+  }
+  &-success-message-container{
+    position: absolute;
+    z-index: 15;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #43C59E;
+    color:#fff;
+    border-radius: 0px 0px 8px 8px;
+  }
+  &-success-message-content{
+    text-align: center;
+    padding:20px;
+  }
+}

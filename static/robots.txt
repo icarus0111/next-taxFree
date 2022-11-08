@@ -1,0 +1,6 @@
+Sitemap: http://taxfreervs.herokuapp.com/sitemap.xml
+
+User-agent: *
+Allow: /*
+
+Disallow: /api/*

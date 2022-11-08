@@ -1,0 +1,174 @@
+
+.golden-gate-scene{
+	width:100%;
+	min-height: 300px;
+	overflow: hidden;
+	svg{
+		max-height: 300px;
+	}
+	.tag{
+		opacity:0;
+	}
+
+	.prop{
+			animation: spin .1s infinite linear;
+			transform-origin: 50% 50%;
+			transform-box: fill-box;
+		}
+
+	.wave{
+		opacity:0;
+		animation: water 7s infinite ease-in-out;
+	}
+
+	.wake{
+		opacity:0;
+		animation: wake 7s infinite ease-in-out;
+	}
+
+	.sail-boat-down{
+		animation: float-down 40s infinite linear;
+		opacity: 0;
+	}
+	.sail-boat-down-inner{
+		animation: bob 5s infinite ease-in-out;
+		transform-origin: 50% 100%;
+		transform-box: fill-box;
+	}
+
+	.car-down{
+		animation: drive-down 8.5s infinite linear;
+	}
+	.car-up{
+		animation: drive-up 8s infinite linear;
+	}
+
+	.plane{
+		animation: fly-down 10s infinite linear;
+	}
+
+
+
+	/*delays*/
+	.sd-0{
+			animation-delay: 0s;
+		}
+
+	.sd-1{
+		animation-delay: 1s;
+	}
+
+	.sd-2{
+		animation-delay: 2s;
+	}
+
+	.sd-3{
+		animation-delay: 3s;
+	}
+
+	.sd-4{
+		animation-delay: 4s;
+	}
+	.sd-5{
+		animation-delay: 5s;
+	}
+	.sd-6{
+		animation-delay: 6s;
+	}
+	.sd-7{
+		animation-delay: 7s;
+	}
+
+
+	/*animations */
+	@keyframes float-down{
+		0% {
+			transform: translate(0%, 0%);
+			opacity: 0;
+		}
+		5%{
+			opacity: 0;
+		}
+		10% {
+			opacity: 1;
+		}
+		100% {
+			transform: translate(-75%, 110%);
+			opacity: 1;
+		}
+	}
+
+	@keyframes drive-down{
+		0% {transform: translate(0%, 0%);}
+		100% {transform: translate(101.5%, 100%);}
+	}
+	@keyframes drive-up{
+		0% {transform: translate(0%, 0%);}
+		100% {transform: translate(-100%, -99%);}
+	}
+	@keyframes fly-down{
+		0% {transform: translate(0%, 0%);}
+		80% {transform: translate(-60%, 110%);}
+		100% {transform: translate(-60%, 110%);}
+	}
+
+
+	@keyframes water{
+			0%{
+				transform: translate(-.75%, -1%);
+				opacity: 0;
+			}
+			25%{
+				opacity: 1;
+			}
+			50%{
+				transform: translate(.75%, .75%);
+
+			}
+			85%{
+				opacity: 0;
+			}
+			100%{
+				transform: translate(-.75%, -.75%);
+				opacity: 0;
+				}
+		}
+
+	@keyframes wake{
+		0%{
+			opacity: 0;
+		}
+		50%{
+			opacity: .5;
+		}
+		100%{
+			opacity: 0;
+		}
+	}
+
+	@keyframes bob{
+			0%{
+				transform: rotate(-4deg);
+			}
+
+			50%{
+				transform: rotate(4deg);
+			}
+
+			100%{
+				transform: rotate(-4deg);
+			}
+		}
+
+	@keyframes spin {
+		0%{
+			transform: rotate(-10deg);
+		}
+		50%{
+			transform: rotate(10deg);
+		}
+		100%{
+			transform: rotate(-10deg);
+		}
+	}
+}

@@ -1,0 +1,102 @@
+.signup-login{
+  &-page{
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 600px;
+  }
+
+  &-title{
+    border-radius: 8px 8px 0px 0px;
+    background: #43C59E;
+    color: #fff;
+    font-size: 22px;
+    padding: 15px;
+  }
+
+  &-form{
+    height: 100%;
+    height: -moz-available;
+    height: -webkit-fill-available;
+    height: fill-available;
+  }
+  &-section{
+    padding: 15px;
+    min-height: 360px;
+    position: relative;
+  }
+  &-input-field-container{
+    margin: 15px 0px;
+  }
+  &-input-title{
+    color: #43C59E;
+  }
+  &-input-field{
+    padding:0px 0px 2px 5px;
+    border: none;
+    border-bottom: 2px solid grey;
+    transition: all .3s;
+    width: 80%;
+    cursor: pointer;
+    &:focus{
+      border-bottom: 2px solid #43C59E;
+    }
+  }
+  &-submit-btn{
+    background: #43C59E;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 15px;
+    font-size: 18px;
+    width: 150px;
+  }
+
+  &-bottom-portion{
+    position: absolute;
+    bottom: 5px;
+  }
+
+  &-error-message-container{
+    position: absolute;
+    z-index: 10;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FF3A3A;
+    color:#fff;
+    border-radius: 0px 0px 8px 8px;
+    cursor: pointer;
+  }
+
+  &-radio-container{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    color:#43C59E;
+    cursor: pointer;
+    input{
+      margin-right: 10px;
+    }
+  }
+  &-label{
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  &-forgot-password-link{
+    position: absolute;
+    bottom:8px;
+    right:8px;
+    color:#43C59E;
+    cursor: pointer;
+    z-index: 5;
+  }
+}

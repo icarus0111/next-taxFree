@@ -1,0 +1,48 @@
+.main-header{
+  overflow: auto;
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 200;
+  h3{
+    color: #43C59E;
+    font-size: 24px;
+    font-weight: 800;
+  }
+}
+
+.main-header-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+
+.register-btn{
+  background: #43C59E;
+  border:none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 9px;
+  font-size: 18px;
+  max-width: 182px;
+}
+
+.header-home-link{
+  text-decoration: none;
+  outline: none;
+  border: none;
+  &:active, &:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none;
+ }
+}
+
+
+@media  (max-width: 460px) {
+  .main-header h3{
+    font-size: 18px;
+  }
+ }

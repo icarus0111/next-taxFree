@@ -1,0 +1,51 @@
+.regular-font{
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.4;
+  font-size: 18px;
+}
+.header-font{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 19px;
+  line-height: 1.4;
+}
+
+.royal-font{
+  font-family: 'Frank Ruhl Libre', serif;
+  font-weight: 100;
+  font-size: 24px;
+}
+
+body{
+  background-color: #f8f8f8;
+}
+
+.page-wrapper{
+  min-height: 80vh;
+}
+
+
+.section{
+  max-width: 95%;
+  margin: 0px auto 55px;
+}
+
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+.ripple:hover {
+  background: #43d59E radial-gradient(circle, transparent 1%, #43C99E 1%) center/15000%;
+}
+.ripple:active {
+  background-color: #43d5aE;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.tan{
+  color:#FFE9CB
+}
+
+.light-blue{
+  color:#009AFF;
+}

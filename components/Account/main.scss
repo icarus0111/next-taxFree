@@ -1,0 +1,44 @@
+.account{
+  &-container{
+    display: flex;
+    min-height: 60vh;
+    margin-bottom: 50px;
+  }
+  &-side-bar{
+    background: #43C59E;
+    border-radius: 10px;
+    margin: 0px 10px;
+    &-list-item{
+      cursor: pointer;
+      padding: 15px;
+      color: #fff;
+      div{
+        width: fit-content;
+        border-bottom: 2px solid #fff;
+        transition: all .4s;
+      }
+    }
+    &-list-item-active{
+      div{
+        border-bottom: 2px solid #80ffd9;
+      }
+    }
+  }
+  &-loading-screen{
+    position: absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-main-content{
+    position: relative;
+    background: #fff;
+    margin: 0px 30px;
+    border-radius: 10px;
+    flex: 1;
+  }
+}

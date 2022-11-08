@@ -1,0 +1,81 @@
+.chart-wrapper{
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.chart-container{
+  height: 300px;
+  width: 60%;
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.chart-input-container{
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
+    > * {
+      padding: 10px 15px 10px 15px;
+    }
+}
+
+.chart-input-container-header{
+  text-align: center;
+  background: #43C59E ;
+  color:#fff;
+  padding: 5px;
+  border-radius: 7px 7px 0px 0px;
+}
+
+.chart-input-content-container{
+align-items: baseline;
+display: flex;
+
+}
+
+.chart-input{
+  border: none;
+  border-bottom: #43C59E 2px solid;
+  margin: 5px 5px 10px 5px;
+}
+
+.check-price-btn{
+  background: #43C59E ;
+  border: 2px solid #43C59E;
+  border-radius: 25px;
+  padding: 8px;
+  color:#fff;
+}
+
+.chart-disclaimer{
+  font-size: 12px;
+}
+
+.chart-form-btn{
+  background: #43C59E;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 9px;
+}
+
+
+// .recharts-cartesian-axis-tick-value::before{
+//   content:"$"
+// }
+
+@media only screen and (max-width: 760px) {
+  .chart-wrapper{
+    flex-direction: column;
+  }
+  .chart-container{
+    width: 95%;
+  }
+
+  .chart-input-container{
+    margin-top: 30px;
+  }
+}

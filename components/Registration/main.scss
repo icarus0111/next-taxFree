@@ -1,0 +1,129 @@
+.registration-page{
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.registration-page-form{
+  width: 90%;
+  margin: 0px auto;
+}
+
+.registration-section{
+  padding: 10px;
+}
+
+.registration-section-title{
+  margin: 10px 0px;
+  width: fit-content;
+  border-bottom: 1px solid #43C59E;
+
+}
+
+.disclaimer{
+  font-size: 12px;
+}
+
+.container-flex{
+  width: 450px;
+  justify-content: space-between;
+  display: flex;
+  p{
+    width: 250px;
+  }
+}
+
+.registration-loading-screen{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.registration-input-field-container{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  .input-field{
+    border-radius: 10px;
+    border: 2px solid grey;
+    padding: 15px 6px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    flex:1;
+    min-width: 300px;
+    transition: all .6s;
+    &:focus{
+      border: 2px solid #43C59E;
+    }
+  }
+  .full-input-field{
+    min-width: 100%;
+  }
+}
+
+.registration-signature-wrapper{
+  cursor:pointer;
+  border: 2px solid #43C59E;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.registration-btn{
+  background: #43C59E;
+  border-radius: 5px;
+  border:none;
+  color: #fff;
+  margin: 10px;
+  padding: 15px;
+}
+
+.registration-radio-field-container{
+  margin-left: 10px;
+}
+
+.registration-radio-option-container{
+  display: flex;
+  align-items: center;
+  width: 200px;
+  justify-content: space-between;
+  margin: 15px 0px;
+  label{
+    width: 150px;
+  }
+}
+
+.registration-error-message-container{
+  background: red;
+  color: #fff;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.registration-error-message-content{
+  max-width: 90%;
+  margin: 0px auto;
+}
+
+.registration-error-message-close-btn{
+  border: none;
+  background: none;
+  border-radius: 50%;
+  color: #fff;
+  position: absolute;
+  padding: 20px;
+  top: 0px;
+  right: 0px;
+  margin: 3px;
+}
+
+.registration-bottom-portion{
+  position: relative;
+}

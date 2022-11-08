@@ -1,0 +1,128 @@
+.down-the-road-city-corner{
+	display: flex;
+	justify-content: flex-end;
+	overflow: hidden;
+	svg{
+		width: 100%;
+    max-width: 700px;
+	}
+    .tag{
+        opacity:0;
+    }
+
+    .object{
+        animation: pass-by 4s infinite linear;
+    }
+
+    .wheel{
+        animation: bump 2s infinite linear;
+    }
+    .rv{
+        animation: shake 2s infinite linear;
+    }
+
+    /*delays*/
+    .sd-0{
+            animation-delay: 0s;
+        }
+
+    .sd-1{
+        animation-delay: 1s;
+    }
+
+    .sd-2{
+        animation-delay: 2s;
+    }
+
+    .sd-3{
+        animation-delay: 3s;
+    }
+
+    .sd-4{
+        animation-delay: 4s;
+    }
+    .sd-5{
+        animation-delay: 5s;
+    }
+    .sd-6{
+        animation-delay: 6s;
+    }
+    .sd-7{
+        animation-delay: 7s;
+    }
+
+    .sd--1{
+        animation-delay: -1s;
+    }
+
+    .sd--2{
+        animation-delay: -2s;
+    }
+
+    .sd--3{
+        animation-delay: -3s;
+    }
+
+    .sd--4{
+        animation-delay: -4s;
+    }
+    .sd--5{
+        animation-delay: -5s;
+    }
+    .sd--6{
+        animation-delay: -6s;
+    }
+    .sd--7{
+        animation-delay: -7s;
+    }
+
+
+    /*animations */
+    @keyframes pass-by{
+        0% {transform: translate(0%, 0%);}
+        95%{
+            opacity:1;
+        }
+        100% {
+            transform: translate(200%, -110%);
+            opacity:0;
+        }
+    }
+
+    @keyframes bump{
+        0%{
+            transform: translate(0%, 0%);
+        }
+        5%{
+            transform: translate(0%, -.5%);
+        }
+        10%{
+            transform: translate(0%, 0%);
+        }
+        15%{
+            transform: translate(0%, -.5%);
+        }
+        20%{
+            transform: translate(0%, 0%);
+        }
+
+        100%{
+            transform: translate(0%, 0%);
+        }
+    }
+
+    @keyframes shake{
+        0%{
+            transform: translate(0%, 0%);
+        }
+        10%{
+            transform: translate(0%, -.5%);
+        }
+        20%{
+            transform: translate(0%, 0%);
+        }
+        100%{
+            transform: translate(0%, 0%);
+        }
+    }
+}

@@ -1,0 +1,101 @@
+.contact-page{
+  min-height: 70vh;
+  max-width: 95%;
+  margin:0px auto;
+
+  main{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  .error-message{
+    // position: absolute;
+    // top: 0px;
+
+  }
+}
+
+.contact-list-container{
+  padding: 0 20px;
+  a{
+      color:rgb(67, 197, 158);
+      text-decoration: none;
+      padding-bottom: 1px;
+      border-bottom: 2px solid rgb(67, 197, 158);
+  }
+  ul{
+
+  }
+  li{
+    padding: 5px 0px;
+  }
+}
+
+.contact-form-container{
+  padding-bottom: 60px;
+  position: relative;
+
+  label{
+    color:rgb(67, 197, 158);
+  }
+
+  h6{
+    margin-bottom: 20px;
+    font-size: 28px;
+    max-width: 400px;
+    padding: 27px;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+  input, textarea{
+    margin-bottom: 10px;
+    max-width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    border:#aaa 2px solid;
+
+  }
+  input:focus,
+  textarea:focus
+  {
+  border: rgb(67, 197, 158) 2px solid;
+  }
+
+  button{
+    border-radius: 5px;
+    padding: 15px;
+    background: rgb(67, 197, 158);
+    color: #fff;
+    margin-top: 10px;
+    border: none;
+    font-size: 20px;
+    width: 100px;
+  }
+
+}
+
+.contact-error{
+  color: red;
+  position: absolute;
+  bottom: 10px;
+}
+
+.contact-success-message{
+  color:rgb(67, 197, 158);
+  position: absolute;
+  bottom: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .contact-page main{
+      flex-direction: column;
+  }
+  .contact-list-container{
+    padding: 20px 0px;
+  }
+}
